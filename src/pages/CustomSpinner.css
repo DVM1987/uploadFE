@@ -1,0 +1,21 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Adjust the border thickness */
+    border-top: 8px solid #3498db; /* Adjust the border thickness */
+    border-radius: 50%;
+    width: 60px; /* Adjust the width */
+    height: 60px; /* Adjust the height */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
